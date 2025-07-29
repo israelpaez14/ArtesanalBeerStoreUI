@@ -23,7 +23,7 @@ export class KeycloakService {
 
   async init() {
     await this.keycloak?.init({
-      onLoad: 'login-required',
+      onLoad: 'check-sso',
     });
   }
 
